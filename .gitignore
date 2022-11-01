@@ -1,0 +1,11 @@
+# ------------------------FILES----------X
+# Save all the secrets keys 
+.env  
+plain.txt
+
+# ------------------------FOLDERS----------x
+# Save all the dependies
+node_modules
+
+# Our collections of databases
+database_collections
