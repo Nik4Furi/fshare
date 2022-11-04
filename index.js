@@ -1,7 +1,26 @@
 //------------------Imports module from 'package.json'--------------------X
-require('dotenv').config();
-const express = require('express'); //Used to create node apps
-const app = express(); //Can used as creating routes
+require('dotenv').config()
+require('./db') //Connect to database
+const mongoose = require('mongoose')
+const express = require('express') //Used to create node apps
+const app = express() //Can used as creating routes
+
+const session = require('express-session') //Session can used identify all users
+const flash = require('express-flash') //To use send the msgs
+const MongoConnect = require('connect-mongo') //Store session into mongoose
+
+//Set the session and store into database
+app.use(session({
+    secret : process.env.SECRET_SESSION,
+    resave : false,
+    saveUninitialized : false,
+    store : MongoConnect.create({
+        mongoUrl:'mongodb://localhost:27017/fshare'
+    }),
+    cookie : {maxAge : 1000*60*60*24} //Secret valid upto 24 hour
+}))
+app.use(flash());
+
 //-----------------Inbuilt modules
 const path = require('path');
 
@@ -15,6 +34,8 @@ const Web = require('./routes/web');
 app.use(express.static('public'))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+
+
 
 //------------------Path Specific Stuff----------------------X
 const viewsPath = path.join(__dirname,'./templates/views');

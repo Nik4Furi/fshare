@@ -7,6 +7,7 @@ const FileController = require('../app/http/controllers/FileControllers'); //Con
 //--------------------Start to create our routers------------------X
 Router.get('/',HomeController().Index); //Show our home page
 Router.post('/upload',FileController().Upload); //Upload the file
-Router.get('/download',FileController().Download); //Show download page
-
+Router.get('/show/:uuid',FileController().Show); //Show Uploading the file
+Router.get('/download/:uuid',FileController().Download); //Show download page
+ 
 module.exports = Router

@@ -1,6 +1,42 @@
 <section class="container my-5" style="min-height: 70vh">
     <div class="d-flex align-items-centr justify-content-center">
-        <!-- Box of the download file content  -->
-        <%- include('../partials/DownloadBox.ejs')%>
+
+        <% if(messages.error) {%>
+            <h4 class="text-danger fw-bold fs-6 border border-dark py-2 px-1 my-2 mx-auto text-center">
+                <%= messages.error%>
+            </h4>
+            <%}%>
+                <% if(messages.success) {%>
+                    <h4 class="text-danger fw-bold fs-6 border border-dark py-2 px-1 my-2 mx-auto text-center">
+                        <%= messages.success%>
+                    </h4>
+                    <%}%>
+
+                        <!-- Box of the download file content  -->
+                        <div
+                            class=" w-50 d-block mx-auto border border-danger px-3 py-2 flex-column rounded shadow-lg">
+                             <!-- logo our app  -->
+                             <div>
+                                <a href="/" target="_blank" style="text-decoration: none"><h2 class="text-center fs-2 my-3 shadow-lg bg-body py-1 px-2 fw-bold text-primary" style="cursor:pointer">fshare</h2></a>
+                            </div>
+
+                            <div class="my-5 d-flex align-items-center justify-content-center flex-column" style="min-height: 50vh">
+                               
+                                <!-- name of the file,with size  -->
+                                <h5 class="fs-5">File Name: <span class="text-primary fw-bold">
+                                        <%= filename%>
+                                    </span> </h5>
+                                <h6 class="fs-6">Size: <span class="text-primary fw-bold">
+                                        <%= size%>
+                                    </span> KB</h6>
+
+
+                                <!-- download button to download the file  -->
+                                <div>
+                                    <a href="<%= download%>"><button class="btn btn-primary">Download</button></a>
+                                </div>
+                            </div>
+                        </div>
+
     </div>
 </section>

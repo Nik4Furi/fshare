@@ -1,5 +1,7 @@
-<section class="container my-2">
-    <div class="mb-3 shadow-lg p-3 bg-body rounded">
-        <input type="text" class="form-control text-bg-dark" id="downloadLink" name="downloadLink" readonly value="hey bro this is link">
-    </div>
-</section>
+<% if(messages.copyLink){%>
+    <section class="container my-2">
+        <div class="mb-3 shadow-lg p-3 bg-body rounded">
+            <input type="text" class="form-control text-bg-dark" id="downloadLink" name="downloadLink" readonly value="<%= messages.copyLink%>">
+        </div>
+    </section>
+    <% }%>

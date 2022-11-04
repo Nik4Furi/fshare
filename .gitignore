@@ -6,6 +6,9 @@ plain.txt
 # ------------------------FOLDERS----------x
 # Save all the dependies
 node_modules
+# Uploadings our files * plz don't create it if you are upload files automatically create
+uploads 
 
 # Our collections of databases
 database_collections
+
