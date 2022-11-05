@@ -1,7 +1,6 @@
 //------------------Imports module from 'package.json'--------------------X
 require('dotenv').config()
 require('./db') //Connect to database
-const mongoose = require('mongoose')
 const express = require('express') //Used to create node apps
 const app = express() //Can used as creating routes
 
@@ -35,8 +34,6 @@ app.use(express.static('public'))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
-
-
 //------------------Path Specific Stuff----------------------X
 const viewsPath = path.join(__dirname,'./templates/views');
 
@@ -49,7 +46,7 @@ app.set('views',viewsPath);
 app.use('/',Web); //All pages which are related our app
 
 //--------------Define the variables from '.env'-----------------X
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8001;
 const URL = process.env.URL;
 
 //------------------Listen to the server--------------X

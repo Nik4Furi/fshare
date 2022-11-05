@@ -9,5 +9,5 @@ Router.get('/',HomeController().Index); //Show our home page
 Router.post('/upload',FileController().Upload); //Upload the file
 Router.get('/show/:uuid',FileController().Show); //Show Uploading the file
 Router.get('/download/:uuid',FileController().Download); //Show download page
- 
+
 module.exports = Router

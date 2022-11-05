@@ -1,7 +1,8 @@
-<% if(messages.copyLink){%>
-    <section class="container my-2">
-        <div class="mb-3 shadow-lg p-3 bg-body rounded">
-            <input type="text" class="form-control text-bg-dark" id="downloadLink" name="downloadLink" readonly value="<%= messages.copyLink%>">
-        </div>
-    </section>
-    <% }%>
+<!-- Copy link component  -->
+<section class="container my-2">
+    <div class="mb-3 shadow-lg p-3 bg-body rounded d-flex align-items-center">
+        <!-- <% if(messages.copyLink){%>                 -->
+        <input type="text" class="form-control text-bg-dark" id="downloadLink" name="downloadLink" readonly value="<%= messages.copyLink%>"> <span  ><img src="/img/copyClipboard.svg" alt="copyClipboard" class="img-fluid d-inline-block" style="cursor: pointer" id="copyClipboard"></span>
+        <!-- <% }%> -->
+    </div>
+</section>

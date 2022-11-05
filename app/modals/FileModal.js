@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-const validator = require('validator'); //Validating the emails
-
 //Create the schema to save the files
 const fileSchema = mongoose.Schema({
     filename : {
@@ -19,23 +17,8 @@ const fileSchema = mongoose.Schema({
     uuid : {
         type : String,
         require : true
-    },
-    sender : {
-        type : String,
-        validate(value){
-            if (!validator(value).isEmail()) {
-                throw new Error(`${value} is not valid email`);
-            }
-        }
-    },
-    receiver : {
-        type : String,
-        validate(value){
-            if (!validator(value).isEmail()) {
-                throw new Error(`${value} is not valid email`);
-            }
-        }
     }
+    
 })
 
 //File collection 
