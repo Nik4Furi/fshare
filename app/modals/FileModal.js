@@ -19,7 +19,7 @@ const fileSchema = mongoose.Schema({
         require : true
     }
     
-})
+},{timestamps:true})
 
 //File collection 
 const fileModal = new mongoose.model('File',fileSchema);

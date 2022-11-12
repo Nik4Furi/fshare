@@ -5,6 +5,9 @@ const path = require('path');
 //Middle wares used 
 const UploadFile = require('../middlewares/UploadFile'); //Uploads files save
 
+//Config function
+const DeleteDoc24Hour = require('../../config/DeleteDoc24Hour'); //Delete documents upto 24 hours less
+
 //Import dependies form 'package.json'
 const { v4: uuid4 } = require('uuid'); //To generates unqiues ids for files
 
@@ -31,6 +34,9 @@ function FileController() {
                     //Save the response
                     let response = await file.save();
                     let copyLink = `${process.env.URL}:${process.env.PORT}/show/${response.uuid}`
+
+                    //Delete files which old from 24 hours
+                    await DeleteDoc24Hour(FileModal);
 
                     //rende the link to copy for show the download page
                     req.flash('success', 'file uploading successfully, share or copy link');
