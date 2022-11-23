@@ -36,7 +36,8 @@ function FileController() {
                     let copyLink = `${process.env.URL}:${process.env.PORT}/show/${response.uuid}`
 
                     //Delete files which old from 24 hours
-                    await DeleteDoc24Hour(FileModal);
+                    try {await DeleteDoc24Hour(FileModal);
+                    } catch (error) {}
 
                     //rende the link to copy for show the download page
                     req.flash('success', 'file uploading successfully, share or copy link');
