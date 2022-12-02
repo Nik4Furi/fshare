@@ -1,4 +1,5 @@
-# <h1 id="fshare"> fshare </h1>
+# <h1 id="fshare"> fshare <span>![GitHub package.json version](https://img.shields.io/github/package-json/v/Nik4Furi/fshare)
+</span> </h1>
 ### A file sharing app, using '<a href="https://ejs.co" target="_ejs">EJS templates</a>'
 fshare, is a fullstack project, which is help the user to upload any file, and after sharing get the donwload file link or share with specific user who want to download.Also have the features, its automatically delete file after 24 hour.
 After getting the link ,users can share via Email, whatsapp or use of other chat plateform.But didnot upload file upto 100 MB.
@@ -21,8 +22,7 @@ After getting the link ,users can share via Email, whatsapp or use of other chat
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Nik4Furi/fshare?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/Nik4Furi/fshare?style=social)
 
-![GitHub top language](https://img.shields.io/github/languages/top/Nik4Furi/fshare)   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Nik4Furi/fshare?style=flat-square) ![GitHub repo file count](https://img.shields.io/github/directory-file-count/Nik4Furi/fshare) ![GitHub package.json version](https://img.shields.io/github/package-json/v/Nik4Furi/fshare)
-
+![GitHub top language](https://img.shields.io/github/languages/top/Nik4Furi/fshare)   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Nik4Furi/fshare?style=flat-square) ![GitHub repo file count](https://img.shields.io/github/directory-file-count/Nik4Furi/fshare) 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Nik4Furi/fshare)   ![GitHub last commit](https://img.shields.io/github/last-commit/Nik4Furi/fshare)
 
 ## <h2 id="looks" >fshare looks like</h2>
@@ -91,14 +91,14 @@ Start the server
 ```bash
   npm run start (start at only time)
 
-  npm run dev (start at end,when you save any file)
+  npm run dev (Run or restart, whenever you save any file(js))
 ```
 
 <a href="#fshare">Go Home </a>
 
 ## <h2 id="envVar">Environment Variables </h2>
 
-To run this project, you will need to add the following environment variables to your .env file also can see <a href="https://github.com/Nik4Furi/fshare/.env.example" target="_env" > .env.exmaple</a> file
+To run this project, you will need to add the following environment variables to your .env file also can see  **.env.exmaple** file
 
 Server Configurations
 
@@ -228,7 +228,7 @@ module.exports = Upload;
 - Delete any file which is late from 24 hour
 - Upload any kind of file, but its not more than 100 MB
 - Use Components
-- Basec On <a href="https://google.com?search='what is mvc architecture'" target="_mvc">MVC Architecture</a>
+- Basec On <a href="https://en.wikipedia.com/wiki/models-view-controller" target="_mvc">MVC Architecture</a>
 
 <a href="#fshare">Go Home </a>
 
@@ -238,7 +238,7 @@ module.exports = Upload;
 
 Here are some related projects
 
-[inotes-api](https://github.com/Nik4Furi/inotes-api)
+[inotes_api](https://github.com/Nik4Furi/inotes_api)
 
-[url-shortener-api](https://github.com/Nik4Furi/url-shortener-api)
+[urlShortener_api](https://github.com/Nik4Furi/urlShortener_api)
 
