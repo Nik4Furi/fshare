@@ -1,11 +1,12 @@
-# <h1 id="fshare"> fshare ![GitHub package.json version](https://img.shields.io/github/package-json/v/Nik4Furi/fshare) <span><img src="" width="60" alt="fshare_logo"/></span> </h1>
-### A fullstack file sharing app, can help the users to upload any type of FILES.Build on <a href="https://ejs.co/" target="_blank" rel="noopener noreferrer">(EJS TEMPLATES)</a>
+# <h1 id="fshare"> <span><img src="https://user-images.githubusercontent.com/91304976/205486387-abd795dc-9255-43eb-ad5e-7047007a04a0.png" width="100" text-align='center' alt="fshare_logo"/></span> </h1>
+
+### A fullstack file sharing app, can help the users to upload any type of FILES.Build on <a href="https://ejs.co/" target="_blank" rel="noopener noreferrer">(EJS TEMPLATES)  ![GitHub package.json version](https://img.shields.io/github/package-json/v/Nik4Furi/fshare) </a>
 fshare, is fullstack app, can help the users to upload any file and get the link to download file.But they did not upload file size more than 100MB. Also did not presure on the database server, becuase have the specific functionality, can delete any files data which is 24 hours old.
   With the help of the app, any one share the files without the fear of files scam because this app automatically deleting the files in 24 hours.
 
 ## Indexing the contents
 ####   <p><a href="#badges" >Badges</a></p>
-####   <p><a href="#looks" >fshare Looka Like</a></p>
+####   <p><a href="#looks" >fshare Looks Like</a></p>
 ####   <p><a href="#demos" >Demo</a></p>
 ####   <p><a href="#stack" >Tech Stack</a></p>
 ####   <p><a href="#runLocally" >Run Locally</a></p>
@@ -31,9 +32,12 @@ fshare, is fullstack app, can help the users to upload any file and get the link
 ## <h2 id="looks" >fshare Looks Like</h2>
 
 <p text-align=left>
-  <img src="https://user-images.githubusercontent.com/91304976/205229770-b57ea733-6bd0-4856-871a-379d5fe1256a.png" width="400"   alt="fshare_home"/>
+  <img src="https://user-images.githubusercontent.com/91304976/205486306-21a0c2a0-6783-4dba-a42c-98654826858d.png" width="400"   alt="fshare_home"/>
   
-  <img src="https://user-images.githubusercontent.com/91304976/205229790-9b00df29-4298-46d5-897a-bee533a5a27d.png" width="500"   alt="fshare_link"/>  
+  <img src="https://user-images.githubusercontent.com/91304976/205486310-12e02da9-d5e6-49a0-b1c6-f123c98d2eb6.png" width="500"   alt="fshare_link"/>  
+ </p>
+ <p text-align=left>
+  <img src="https://user-images.githubusercontent.com/91304976/205486313-13b5c1e8-ded1-491e-ac42-5f4c60049eee.png" width="500"   alt="fshare_link"/>  
  </p>
  
 <a href="#fshare">Go Home </a>
@@ -43,10 +47,11 @@ fshare, is fullstack app, can help the users to upload any file and get the link
 
 <p text-align=left>
 
-  <img src="https://user-images.githubusercontent.com/91304976/205230538-c2ea2d4e-d850-41e6-af29-618fe7546032.gif" width="500"   alt="fshare_home"/>
+  <img src="https://user-images.githubusercontent.com/91304976/205486361-3445870c-418a-4f04-8094-6280812f0f21.gif" width="500"   alt="fshare_home"/>
+ 
+
     
-    
-  <img src="https://user-images.githubusercontent.com/91304976/205230554-291cb593-92ae-4399-ab03-b40aa0722a7d.gif" width="500"   alt="fshare_download"/>  
+  <img src="https://user-images.githubusercontent.com/91304976/205486302-27e02371-d21b-41cd-b897-7f9d7a4593c1.gif" width="500"   alt="fshare_download"/>  
  </p>
 
 <a href="#fshare">Go Home </a>
