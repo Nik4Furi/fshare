@@ -7,5 +7,4 @@ const copyClipboard = document.getElementById('copyClipboard');
 //Add the listener to copy the code
 copyClipboard.addEventListener('click',()=>{   
    navigator.clipboard.writeText(downloadLink)
-
 })

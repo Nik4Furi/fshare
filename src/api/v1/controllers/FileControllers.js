@@ -1,12 +1,12 @@
 //-----------Imports the modals which are used into-------------X
-const FileModal = require('../../modals/FileModal'); //handle all the content related to file
+const FileModal = require('../../../modals/FileModal'); //handle all the content related to file
 const path = require('path');
 
 //Middle wares used 
 const UploadFile = require('../middlewares/UploadFile'); //Uploads files save
 
 //Config function
-const DeleteDoc24Hour = require('../../config/DeleteDoc24Hour'); //Delete documents upto 24 hours less
+const DeleteDoc24Hour = require('../../../config/DeleteDoc24Hour'); //Delete documents upto 24 hours less
 
 //Import dependies form 'package.json'
 const { v4: uuid4 } = require('uuid'); //To generates unqiues ids for files
@@ -46,7 +46,7 @@ function FileController() {
 
                 } catch (error) {
                     //rende the link to copy for show the download page
-                    req.flash('error', 'Something went wrong,Try again')
+                    req.flash('error', `Something went wrong,Try again ${error}`)
                     return res.redirect('/');
                 }
             })
@@ -87,9 +87,7 @@ function FileController() {
                     req.flash('error', 'file does not exist')
                     return res.redirect('/');
                 }
-                let filePath = path.join(__dirname, `../../../${file.path}`)
-
-                res.download(filePath); //download the file have given path
+                res.download(file.path); //download the file have given path
 
             } catch (error) {
                 //rende the link to copy for show the download page

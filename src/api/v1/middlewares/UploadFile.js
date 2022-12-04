@@ -2,9 +2,11 @@
 const multer = require('multer');
 const path = require('path');
 
+// console.log(path.join(__dirname,'../../../../uploads'));
+
 //Define the storage where to save our files
 const Storage = multer.diskStorage({
-    destination : 'uploads',
+    destination : `${path.join(__dirname,'../../../../uploads')}`,
     filename : (req,file,cb)=>{
         const uniqueName = `${Date.now()}-${Math.floor(Math.random() * 1E9)}${path.extname(file.originalname)}`;
         cb(null,uniqueName);

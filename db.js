@@ -1,12 +1,24 @@
+const { MongoClient } = require('mongodb');
+
+// const uri = process.env.DB_URI; //Our database uri to connecting database
+
+// const client = new MongoClient(uri);
+
+// async function main() {
+//     // Use connect method to connect to the server
+//     await client.connect();
+// }
+
+// main()
+//     .then(() => console.log('Connected successfully to server'))
+//     .catch((err) => console.log('Error occured during connect database ', err))
+//     .finally(() => client.close());
+
 const mongoose = require('mongoose');
 
-//Define the variables/import from .env
-const server = process.env.DB_SERVER;
-const host = process.env.DB_HOST;
-const port = process.env.DB_PORT;
-const db_name = process.env.DB_NAME;
-
-//Connection to the database
-mongoose.connect(`${host}://${server}:${port}/${db_name}`,{useNewUrlParser:true,useUnifiedTopology:true}).
-then(()=>{console.log('Connection to database')}). 
-catch((e)=>{console.log(`Error occured during connect to database ${e}`)});
+const uri = process.env.DB_URI 
+ 
+mongoose.connect(uri,{
+    useNewUrlParser : true,useUnifiedTopology:true
+}).then(()=>console.info('Connectin to database successfully'))
+.catch((err)=>console.error(err))

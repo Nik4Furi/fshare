@@ -1,0 +1,20 @@
+User-agent: *
+Disallow:/robots.txt
+Disallow:/README.md
+Disallow:/uploads
+Disallow:/public/img/*
+Disallow:/public/*
+Disallow:/.env
+Disallow:/.gitignore
+Disallow:/db
+Disallow:/index
+Disallow:/src/api/*
+Disallow:/src/modals/*
+Disallow:/src/config/*
+Disallow:/src/api/v1/controllers/*
+Disallow:/src/api/v1/middlewares/*
+Disallow:/src/api/v1/routers/*
+Disallow:/src/api/v1/templates/*
+Disallow:/src/api/v1/templates/partials/*
+
+Crawl-delay: 15
